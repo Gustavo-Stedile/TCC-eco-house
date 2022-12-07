@@ -1,0 +1,69 @@
+body {
+    width: 100vw; height: 100vh;
+    background-image: url(../res/circulos_erro.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+#status {
+    width: 40%; height: 40%;
+    min-width: 500px;
+    background-color: #ffffffda;
+    box-shadow: 4px 1px 10px 0 #212121;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#status h1 {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    height: 30%; width: 80%;
+    margin-left: 45px;
+    align-items: center;
+}
+.sorriso {
+	color: rgb(20, 251, 20);
+}
+.tristinho {
+    color: red;	
+}
+#status span {
+    position: relative;
+    font-size: 45px;
+    margin-right: 10px;
+    bottom: 2px;
+    font-weight: 600;
+}
+.btn-dashed {
+    align-self: center;
+    position: relative;
+    top: 20%;
+}
+.erro {
+    border-color:  #fc2b2b;
+	
+}
+.erro:before {
+	color: white;
+	font-weight: bold;
+    background-color: #fc2b2b;	
+    content: "VOLTAR"
+}
+.acerto:before {
+	background-color: rgb(20, 251, 20);
+	content: "CONTINUAR"
+}
+.acerto {
+	border-color: rgb(20, 251, 20);
+}
+#status p {
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: bold;
+
+}

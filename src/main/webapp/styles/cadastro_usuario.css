@@ -1,0 +1,107 @@
+#mensagem {
+    position: absolute;
+    width: 100vw; height: 100vh;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    z-index: 3;
+    font-weight: bold;
+    justify-content: center;
+    background-color: white;
+}
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 0;
+    flex-direction: column;
+    position: relative;
+}
+form {
+    z-index: 0;
+    height: auto;
+}
+input[type="submit"] {
+    width: 50%;
+}
+#first {
+    height: 68vh;
+    min-height: 678px;
+}
+#second {
+    height: 45vh;
+}
+#second .fields {
+    display: flex;
+    align-items: center;
+}
+.hover:hover {
+    background-size: 110%;
+}
+.pp-preview {
+    width: 120px; height: 120px;
+    border-radius: 100%;
+    background-image: url(../res/default-user-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.no-hover:hover {
+    background-size: cover;
+}
+#foto-perfil {
+    display: none;
+}
+#third {
+    height: 60vh;
+}
+.section h2 {
+    font-size: 30px;
+}
+button {
+    margin: auto;
+}
+.button-row { 
+    display: flex;
+    width: 40%; height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.linha-rua {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#numero {
+    width: 20%;
+}
+#rua {
+    margin-right: 10px;
+    width: 80%;
+}
+.next {
+    align-self:auto;
+}
+.button-row div {
+    cursor: pointer;
+    box-shadow: 1px 0 5px 0 #212121;
+    font-weight: bold;
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-row div:hover {
+    box-shadow: 3px 0 6px 0 #212121;
+
+}

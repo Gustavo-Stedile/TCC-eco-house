@@ -8,6 +8,9 @@
 ❗ Utiliza de conceitos AJAX para permitir a visualização das direções do mapa sem trocar de página
 
 ✅ Linguagens: 
+
 .Javascript, HTML e CSS
+
 .Java (Hibernate, Servlet API e JSTL)
+
 .MySQL

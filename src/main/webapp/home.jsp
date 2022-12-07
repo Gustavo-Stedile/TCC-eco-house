@@ -816,7 +816,7 @@
 			</c:choose>
 		</div>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBztUreFEKS1hDJfYxqRr4eh3Te_zEUfmo&callback=initMap&v=weekly"defer></script>			
+		<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&v=weekly"defer></script>			
 		<script>		
 			const dicas = ['Separe seu lixo por categoria: metal, plástico, papel e lixo orgânico', 'Para o descarte correto do óleo de cozinha coloque-o em uma garrafa PET e leve a um Ponto de Entrega Voluntária (PEV).', 'Utilize sacolas biodegradável para o descarte dos lixos.', 'Se possível, reutilize as embalagens de vidro.', 'Busque locais especializados para o descarte de lixo eletrônico.']
 			const dicaAleatoria = dicas[Math.floor(Math.random() * dicas.length)];
@@ -943,7 +943,7 @@
 	        	const cidade = document.querySelector('#cidade').value;
 
 				
-	        	const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + cidade + ', ' + bairro + ' ' + rua + ' ' + numero +'&key=AIzaSyBztUreFEKS1hDJfYxqRr4eh3Te_zEUfmo');
+	        	const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + cidade + ', ' + bairro + ' ' + rua + ' ' + numero +'&key=API_KEY');
 				const data = await res.json();
 				
 				if (data.results.length == 0) {
@@ -967,7 +967,7 @@
 			});
 			
 			async function getCoordinates(adress) {
-				const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address='+adress+'&key=AIzaSyBztUreFEKS1hDJfYxqRr4eh3Te_zEUfmo');
+				const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address='+adress+'&key=API_KEY');
 				const obj = await res.json();				
 				return obj.results[0].geometry.location;
 			}

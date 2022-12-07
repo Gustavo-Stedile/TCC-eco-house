@@ -42,7 +42,7 @@
             <div id="third" class="section">
                 <div class="form-header"> 
                     <a href="${context}/home"><img id="logo" src="${context}/res/logo_app.png" alt=""></a>                   
-                    <h2>informações domiciliares</h2>
+                    <h2>informaÃ§Ãµes domiciliares</h2>
                 </div>
                 
                  <div class="erro" style="display: none">
@@ -51,7 +51,7 @@
                 
                 <div class="fields">
                     <div>
-                        <label for="cep">Número do CEP</label>
+                        <label for="cep">NÃºmero do CEP</label>
                         <input type="text" name="cep" placeholder="cep" id="cep" required />
                     </div>
                     <div>
@@ -64,10 +64,10 @@
                     </div>
 
                     <div>
-                        <label for="rua">Rua e Número</label>
+                        <label for="rua">Rua e NÃºmero</label>
                         <div class="linha-rua">
                             <input type="text" name="rua" placeholder="rua" id="rua" required />
-                            <input type="text" name="numero" placeholder="nº" id="numero" required />
+                            <input type="text" name="numero" placeholder="nÂº" id="numero" required />
                         </div>
                     </div>
 
@@ -93,13 +93,13 @@
 
 
 				try {
-					const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + cidade + ', ' + rua + ' '+ bairro +' ' + numero +'&key=AIzaSyBztUreFEKS1hDJfYxqRr4eh3Te_zEUfmo');
+					const res = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + cidade + ', ' + rua + ' '+ bairro +' ' + numero +'&key=API_KEY');
 					const data = await res.json(); 
 					console.log(data);
 					if (data.results.length == 0) {
 						const error = document.querySelector('.erro');
 						error.style.display = 'flex';
-						error.innerHTML += 'Domicílio não encontrado';
+						error.innerHTML += 'DomicÃ­lio nÃ£o encontrado';
 						document.querySelector('form').style.borderTopColor = 'red';
 						return;
 					} 
